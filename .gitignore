@@ -1,0 +1,19 @@
+# Local working notes (not part of the repo)
+/local-docs/
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# Node / build
+node_modules/
+dist/
+coverage/
+*.log
+
+# Editor
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
