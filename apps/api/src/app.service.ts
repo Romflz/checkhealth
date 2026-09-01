@@ -1,8 +1,6 @@
 import { Injectable } from '@nestjs/common';
+import type { GetHealth } from '@checkhealth/shared';
 
-export interface GetHealth {
-  msg: 'ok' | 'degraded'
-}
 @Injectable()
 export class AppService {
   getHealth(): GetHealth {

@@ -2,8 +2,8 @@
   "name": "checkhealth",
   "version": "0.0.1",
   "scripts": {
-    "dev:fe": "pnpm --filter web start:dev",
-    "dev:be": "pnpm --filter api start:dev",
+    "dev:fe": "pnpm --filter @checkhealth/web start:dev",
+    "dev:be": "pnpm --filter @checkhealth/api start:dev",
     "dev:all": "pnpm -r --parallel start:dev"
   },
   "author": "romflz",
