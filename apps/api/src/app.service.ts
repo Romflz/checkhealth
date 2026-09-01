@@ -1,8 +1,13 @@
 import { Injectable } from '@nestjs/common';
 
+export interface GetHealth {
+  msg: 'ok' | 'degraded'
+}
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  getHealth(): GetHealth {
+    return {
+      msg: 'ok',
+    };
   }
 }
