@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.41"
+    "vue": "^3.5.41",
+    "@checkhealth/shared": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",

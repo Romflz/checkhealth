@@ -1,7 +1,15 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { ref, onMounted } from 'vue'
+import type { GetHealth } from '@checkhealth/shared'
+
+const data = ref<GetHealth | null>(null)
+
+onMounted(async () => {
+  const res = await fetch('/api/health')
+  data.value = (await res.json()) as GetHealth
+})
 </script>
 
 <template>
-  <HelloWorld />
+    <p v-if="data">{{ data.msg }}</p>
 </template>
