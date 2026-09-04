@@ -1,24 +1,31 @@
 {
-  "name": "@checkhealth/web",
+  "name": "web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "license": "MIT",
   "scripts": {
-    "start:dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.41",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "@checkhealth/shared": "workspace:*"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "^24.13.3",
-    "@vitejs/plugin-vue": "^6.0.8",
-    "@vue/tsconfig": "^0.9.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "eslint": "^10.9.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.4",
+    "globals": "^17.11.0",
     "typescript": "~6.0.2",
-    "vite": "^8.2.2",
-    "vue-tsc": "^3.3.11"
+    "typescript-eslint": "^8.67.0",
+    "vite": "^8.2.2"
   }
 }
